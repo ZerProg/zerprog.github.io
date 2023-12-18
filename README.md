@@ -1,1 +1,1 @@
-# royalseal.github.io
+royalseal.github.io
