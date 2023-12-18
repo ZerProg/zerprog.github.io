@@ -1,0 +1,85 @@
+body{overflow: hidden;}
+.imm{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: aliceblue;
+    z-index: 5;
+    animation: hh 5s both;
+    font-size: 2.5vh;
+}
+.imm img{
+    position: absolute;
+    width: 50%;
+max-height: 80%;
+left: 25%;
+top:5vh;
+border-radius: 5vh;
+}
+.imm h3 {
+    display: flex;
+    position: absolute;
+    bottom: 10vh;
+}
+@keyframes hh{
+    100%{
+        filter: opacity(5%);
+        z-index: -1;
+    }
+}
+.d1 h1{
+    animation: ssl 1s 3;
+    transition-duration: 1s;
+}
+.d2{
+    animation: st 2s both;
+    background: linear-gradient(to top, rgb(85, 255, 0),blue);
+    box-shadow: 0 -2vh 4vh blue,0 2vh 4vh rgb(55, 255, 0);
+    margin-left: 150%;
+    width: 100%;
+    margin-top: 0%;
+}
+@keyframes st{
+    100%{
+        margin: 0;
+    color: rgb(0, 0, 0);
+bottom: 27%;
+    }
+}
+h2{
+    animation: st 2s both;
+padding: 1vh;
+    color: rgb(255, 255, 255);
+ margin-left: -1000%;   
+ 
+}
+@media handheld and(max-width:1000px){
+.con{
+    background: aliceblue;
+}
+}
+button{
+background-color: aqua;
+bottom: -10%;
+animation: st 3s both;
+}
+.d3 select{
+    margin-left: 100%;
+animation: sel 2s both;
+}
+@keyframes sel{
+    100%{
+        margin: 0;
+    }
+}
+@keyframes ssl{
+    10%{
+transform: scale(1.025,1.025) translateY(0%);
+    }
+    60%{
+        transform: scale(0.9,0.9) translateY(50%);
+    }
+}

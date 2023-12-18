@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon/icon.png">
+    <link rel="stylesheet" href="main.css">
+    <script defer src="script2.js"></script>
+    <script src="keys.js"></script>
+    <script src="rask.js"></script>
+    <script src="Boot/prot.js"></script>
+    <title>250 символов</title>
+</head>
+<style>
+.d2{
+    grid-area: b;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, rgb(128, 0, 255), rgb(26, 255, 0));
+    border-radius: 3vh;
+    box-shadow:1vh 0 2vh rgb(128, 0, 255), -2vh 0 2vh rgb(64, 255, 0),1vh 0 2vh rgb(128, 0, 255),0 1.5vh 1vh rgba(183, 0, 255, 0.433),0 1.5vh 1vh rgba(4, 255, 0, 0.91),0 -1.5vh 1vh rgba(170, 0, 255, 0.518),0 -1.5vh 1vh rgba(4, 255, 0, 0.91);
+}
+</style>
+<body>
+<div class="con">
+    <div class="d0"><div class="Hi">Привет, это программа для обучения скоропечатанию. Видишь букву “A”? Она будет меняться на другие <b>английские буквы </b>и перемещаться по экрану. При нажатии на клавишу с этой буквой тебе будет добавляться 1 символ и при достежении 250 уровень закончится.</div>
+        <button class="start">Старт</button>
+    </div>
+    <div class="d1"><h1>Время <span class="timem">00</span>:<span class="times">00</span></h1></div>
+    <div class="d2"><h3 class="s40"></h3> <h2>Символов:&#160;<span class="life">0</span></h2></div>
+    <div class="d3">© ZerProg Studio 2023</div>
+    <h1 class="letter">A</h1>
+    <script>
+        let Hi = document.querySelector('.Hi')
+        let d1 = document.querySelector('.d1')
+        let d2 = document.querySelector('.d2')
+        let T = document.querySelector('title')
+        let start = document.querySelector('.start')
+        if(lang=='EN'){
+            T.innerHTML='250 characters'
+            Hi.innerHTML='Hello, this is a program for learning speed typing. Do you see the letter “A”? It will change to other <b>english letters</b> and move around the screen. When you press a key with this letter, 1 character will be added to you and when you reach 250 the level will end.'
+            d1.innerHTML=`<h1>Time <span class="timem">00</span>:<span class="times">00</span></h1>`
+            d2.innerHTML='<h3 class="s40"></h3> <h2>Characters:&#160;<span class="life">0</span></h2>'
+            start.innerHTML='Start'
+        }
+        let b = document.querySelector('b')
+    </script>
+</body>
+</html>

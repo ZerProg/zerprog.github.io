@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html  lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="icon/icon.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="keys.js"></script>
+    <script src="rask.js"></script>
+    <script src="Boot/prot.js"></script>
+    <script defer src="script1.js"></script>
+    <title>Прыгающие буквы</title>
+</head>
+<body id="swup">  
+<div class="con">
+    <div class="d0"><div class="Hi">Привет, это программа для обучения скоропечатанию. Видишь букву “A”? Она будет меняться на другие <b>английские буквы </b>и перемещаться по экрану. При нажатии на клавишу с этой буквой тебе будет добавляться 1 жизнь.Чтобы начать, нажми старт.</div>
+        <button class="start">Старт</button>
+    </div>
+    <div class="d1"><h1>Осталось <span class="time">180</span> секунд</h1></div>
+    <div class="d2"><h3 class="s40"></h3> <h2>Жизни:&#160;<span class="life">100</span></h2></div>
+    <div class="d3">© ZerProg Studio 2023</div>
+    <h1 class="letter">A</h1>
+    <script>
+        let Hi = document.querySelector('.Hi')
+        let d1 = document.querySelector('.d1')
+        let d2 = document.querySelector('.d2')
+        let T = document.querySelector('title')
+        let start = document.querySelector('.start')
+        if(lang=='EN'){
+            T.innerHTML='Jumping letters'
+            Hi.innerHTML='Hello, this is a program for learning speed typing. Do you see the letter “A”? It will change to other <b>english letters</b> and move around the screen. When you press a key with this letter, 1 life will be added to you. To start, press start.'
+            d1.innerHTML=`<h1><span class="time">180</span> seconds left</h1>`
+            d2.innerHTML='<h3 class="s40"></h3> <h2>Life:&#160;<span class="life">100</span></h2>'
+            start.innerHTML='Start'
+        }
+        let b = document.querySelector('b')
+    </script>
+</body>
+</html>
