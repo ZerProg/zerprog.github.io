@@ -1,0 +1,131 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto:wght@500&display=swap');
+    *{margin: 0;font-family: 'Bruno Ace', sans-serif;}
+    body{overflow: hidden;}
+    .con{
+        display: grid;
+        min-height: 100vh;
+min-width: 100%;
+justify-content: center;
+grid-template-columns: 1fr 3fr 1fr;
+grid-template-rows: 1fr 2fr 1fr;
+grid-template-areas: 
+'a a a'
+'. b .'
+'c c c';
+background: black;
+}
+.d1{
+  grid-area: a;
+  color: aliceblue;
+}
+.d1 h1{
+  display: flex;
+  justify-content: center;
+  font-size: 3.3vh;
+}
+.d2{
+    grid-area: b;
+    background: rgb(0, 255, 98);
+    border-radius: 2.5vh;
+    box-shadow: 0 0 3vh rgb(0, 255, 128);
+    font-size: 1.9vh;
+    margin-top: -100%;
+    height: 100%;
+    animation: sel 1s both;
+}
+.d2 select{
+  background: blue;
+  color: aliceblue;
+  font-size: 2.6vh;
+  border-radius: 1.5vh;
+  border: 0.3vh solid rgb(107, 107, 107);
+}
+h2{
+    margin-left: 2.5%;
+}
+span{
+    display: block;
+    margin-left: 9%;
+    margin-top: 2vh;
+    font-size: 4vh;
+}
+input[type=radio] {
+    margin-top: -5%;
+    margin-left: 2%;
+    display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  position: absolute;
+}
+@media(min-height:150px){
+  input[type=radio] {
+    margin-top: -1%;
+  }
+}
+@media(min-height:220px){
+  input[type=radio] {
+    margin-top: 0.9%;
+  }
+}
+input[type=radio]:after {
+  width: 3.1vh;
+  height: 3.1vh;
+  border-radius: 50%;
+  background-color: #000000;
+  content: "";
+  display: inline-block;
+  transition-duration: 0.5s;
+  border: 0.35vh solid rgb(0, 0, 0);
+}
+input[type=radio]:checked:after {
+  width: 3.1vh;
+  height: 3.1vh;
+  background-color: #0011ff;
+  border: 0.35vh solid rgb(0, 0, 0);
+  transition-duration: 0.5s;
+}
+.d3{
+    grid-area: c;
+    display: flex;
+justify-content: center;
+align-items: end;
+padding-bottom: 1vh;
+font-size: 4vh;
+color: aliceblue;
+margin-left: -20%;
+bottom: 1px;
+}
+.d3 select{
+font-size: 3.6vh;
+border-radius: 1.5vh;
+margin-left: 1%;
+background: #00ff08;
+border: 0.5vh solid rgb(107, 107, 107);
+color: #000000;
+}
+
+button{
+    position: absolute;
+    font-size: 5vh;
+    width: 50%;
+    left: 25%;
+    bottom: -10vh;
+    border-radius: 1.5vh;
+     border: 0.5vh solid rgb(89, 0, 255);
+     background: #00ff08;
+     font-weight: 900;
+     animation: sel 1s both;
+    }
+  @keyframes sel{
+    100%{
+      margin: 0;
+      transform: translateY(0%);
+      bottom: 28vh;}}
+      .nast{
+        position: absolute;
+        width: 12vh;
+        height: 12vh;
+        padding: 1%;
+      }
