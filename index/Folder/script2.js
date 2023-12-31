@@ -41,6 +41,7 @@ start.onclick=()=>{
             if (sound=='on') {
             aud.play()
             aud.volume=0.1
+        aud.setAttribute('loop','')
             }
 //Выбор символа
         setInterval(()=>{if (otv==0) {
