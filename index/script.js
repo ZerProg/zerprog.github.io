@@ -165,5 +165,8 @@ if (sound=='off') {
     nast.innerHTML=OfF
     On=1
 }
+if (sound==null) {
+    localStorage.setItem('sound','on')
+}
 //Сделано
 console.error('Made by ZerProg studio in 2023.')
